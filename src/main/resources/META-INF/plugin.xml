@@ -1,0 +1,27 @@
+<idea-plugin>
+    <id>com.example.simple</id>
+    <name>Simple files</name>
+    <vendor email="support@mycompany.com" url="http://www.mycompany.com">MyCompany</vendor>
+
+    <description>Blah blah Blah blah Blah blah Blah blah Blah blah</description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileTypeFactory implementation="com.example.simple.SimpleFileTypeFactory"/>
+        <lang.parserDefinition language="Simple" implementationClass="com.example.simple.SimpleParserDefinition"/>
+        <lang.syntaxHighlighterFactory language="Simple" implementationClass="com.example.simple.SimpleSyntaxHighlighterFactory"/>
+        <lang.commenter language="Simple" implementationClass="com.example.simple.SimpleCommenter"/>
+        <annotator language="JAVA" implementationClass="com.example.simple.SimpleAnnotator"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+    <version> 1.0.0 </version>
+</idea-plugin>
